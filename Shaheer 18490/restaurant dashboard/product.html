@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    <style>
+.card {
+    display: inline-block; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body style="margin: 0pc;">
+    
+        <div class="card">
+            <img src="../images/pizza.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Pizza</h1>
+            <p class="price">$10.99</p>
+            
+            <p><button onclick="addItemToCart()">Add to Cart</button></p>
+          </div>
+          <div class="card">
+            <img src="../images/noodle.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>noodle</h1>
+            <p class="price">$10.99</p>
+            
+            <p><button onclick="addItemToCart()">Add to Cart</button></p>
+          </div>
+          <div class="card">
+            <img src="../images/chinese.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>chinese</h1>
+            <p class="price">$10.99</p>
+            
+            <p><button onclick="addItemToCart()">Add to Cart</button></p>
+          </div>
+          <div class="card">
+            <img src="../images/chinese noodle.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>chinese noodle</h1>
+            <p class="price">$10.99</p>
+            
+            <p><button onclick="addItemToCart()">Add to Cart</button></p>
+          </div>
+          <div class="card">
+            <img src="../images/biryani.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>biryani</h1>
+            <p class="price">$10.99</p>
+            
+            <p><button onclick="addItemToCart()">Add to Cart</button></p>
+          </div>
+          <div class="card">
+            <img src="../images/karahi.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>karahi</h1>
+            <p class="price">$10.99</p>
+            
+            <p><button onclick="addItemToCart()">Add to Cart</button></p>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Album 4</span>
+            <img class="shop-item-image" src="Images/Album 4.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$19.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+
+</body>
+<script src="store.js"></script>
+</html>
